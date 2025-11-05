@@ -1,0 +1,303 @@
+    1  whoami
+    2  who
+    3  id
+    4  w
+    5  last
+    6  uname
+    7  cat /proc/cpuinfo
+    8  cat /proc/meminfo
+    9  cat /proc/partitions
+   10  free
+   11  df -h
+   12  lsb_release
+   13  lsblk
+   14  lscpu
+   15  ps aux
+   16  top
+   17  history
+   18  pwd
+   19  whoami
+   20  ssh-keygen -t ed25519
+   21  pwd
+   22  ls -l
+   23  ls -la
+   24  cd .ssh
+   25  ls -l
+   26  cat id_ed25519.pub 
+   27  cd ..
+   28  pwd
+   29  ls
+   30  mkdir clase4
+   31  ls -l
+   32  cd clase4
+   33  echo lineal
+   34  echo lineal > archivo.txt
+   35  ls -l
+   36  cat > archivo2.txt
+   37  ls -l
+   38  cat *.txt
+   39  cat archivo.txt >> archivo2.txt
+   40  cat archivo2.txt
+   41  cat archivo.txt archivo2.txt > archivo3.txt
+   42  ls -l
+   43  cat archivo3.txt
+   44  mkdir documentos
+   45  ls -l
+   46  cd documentos
+   47  cd ..
+   48  cat archivo3.txt
+   49  grep lineal archivo.txt
+   50  grep LINEA archivo3.txt
+   51  grep -i lineal archivo3.txt
+   52  grep -c lineal archivo3.txt
+   53  grep -n lineal archivo3.txt
+   54  grep -v lineal archivo3.txt
+   55  sudo apt install tree
+   56  tree
+   57  mkdir practica
+   58  ls -l
+   59  cd practica
+   60  ls -l
+   61  touch practica1.tx
+   62  ls -l
+   63  cp practica1.txt practica2.txt
+   64  touch practica1.txt
+   65  ls -l
+   66  cp practica1.txt practica2.txt
+   67  rm practica1.txt
+   68  ls -l
+   69  rm practica1.tx
+   70  ls -l
+   71  mv practica2.txt /home/osboxes/clase4
+   72  ls -l
+   73  c ..
+   74  cd ..
+   75  ls -l
+   76  mr dir practica
+   77  rm dir practica
+   78  rem dir practica
+   79  rm dir practica
+   80  ls -l
+   81  ls-l
+   82  ls -l
+   83  mkdir clase5
+   84  ls-l
+   85  ls -l
+   86  cd clase5
+   87  clase5 pwd
+   88  ls -l
+   89  tree
+   90  mkdir facturas pedidos
+   91  tree
+   92  mkdir -p clientes/{facturas,pedidos}
+   93  ls -l
+   94  tree
+   95  mkdir -p {clientes,proveedores}/{facturas,pedidos}
+   96  tree
+   97  mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+   98  tree
+   99  mkdir -p insaurralde/contactos/{clientes,proveedores}/{facturas,pedidos}
+  100  tree
+  101  mkdir -p insaurralde_2/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+  102  tree
+  103  cd ..
+  104  pwd
+  105  whoami
+  106  who
+  107  w
+  108  cat /etc/passwd
+  109  grep -i osboxes /etc/passwd
+  110  cat /etc/shadow
+  111  sudo cat/etc/shadow
+  112  sudo cat /etc/shadow
+  113  grep -i osboxes /etc/shadow
+  114  sudo grep -i vagrant /etc/shadow
+  115  sudo grep -i osboxes /etc/shadow
+  116  cat /etc/group
+  117  grep osboxes /etc/group
+  118  sudo su
+  119  ls -l
+  120  cat arch_root.txt
+  121  rm arch_root.txt 
+  122  ls -l
+  123  useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+  124  sudo useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+  125  sudo useradd -m -s /bin /bash -c "Usuario pepe" -G Alumno pepe
+  126  groupadd NewGroup
+  127  sudo groupadd
+  128  groupadd Alumnos
+  129  sudo groupadd Alumnos
+  130  sudo useradd -m -s /bin /bash -c "Usuario pepe" -G Alumno pepe
+  131  sudo useradd -m -s /bin /bash -c "Usuario pepe" -G Alumnos pepe
+  132  ls -l
+  133  ls -l /home
+  134  grep pepe /etc/passwd
+  135  useradd -m -s /bin/bash -c "comentario" newuser
+  136  sudo useradd -m -s /bin/bash -c "comentario" newuser
+  137  groupadd NewGroup
+  138  sudo useradd -m -s /bin /bash -c "Usuario pepe" -G Alumnos pepe
+  139  grep pepe /etc/password
+  140  grep pepe /etc/passwd
+  141  ls -l
+  142  pwd
+  143  cd repogit
+  144  mkdir repogit
+  145  cd repogit
+  146  ls -l
+  147  git clone git@github.com:Eros0708/TP1_AySO_Menna_Eros.git
+  148  apt-get install git
+  149  sudo su
+  150  pwd
+  151  ls -l
+  152  cd repogit
+  153  git clone git@github.com:Eros0708/TP1_AySO_Menna_Eros.git
+  154  cd TP1_AySO_Menna_Eros/
+  155  pwd
+  156  ls -l
+  157  cat /etc/os-release
+  158  cd repogit
+  159  cd TP1_AySO_Menna_Eros/
+  160  cat /etc/os-release
+  161  grep HOME_URL /etc/os-release
+  162  grep home_urlL /etc/os-release
+  163  grep home_urL /etc/os-release
+  164  grep -i  home_urL /etc/os-release
+  165  grep -i  home_urL /etc/os-release > datos_url.txt
+  166  ls- l
+  167  ls -l
+  168  whoami
+  169  id -un
+  170  usuario: datos_usuario.txt
+  171  ls -l
+  172  cd repogit
+  173  cd TP1_AySO_Menna_Eros/
+  174  ls -l
+  175  whoami
+  176  echo "Usuario=$(whoami)" > datos_usuario.txt
+  177  ls -l
+  178  git add .
+  179  git conig --global user.email "eroslorenzomenna1@gmail.com"
+  180  git config --global user.email "eroslorenzomenna1@gmail.com"
+  181  git config --global user.name "Eros-Menna"
+  182  git commir -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+  183  git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+  184  git status
+  185  git push
+  186  grep
+  187  grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+  188  cat datos_usuario.txt 
+  189  git add datos usuario.txt
+  190  git add datos_usuario_txt
+  191  git add datos_usuarit.txt
+  192  git add datos_usuario.txt
+  193  git commit -m "feat: añadiendo informacion de CPU"
+  194  git push
+  195  cat <<EOF >> README.md
+  196  Alumno: <Eros-Menna>
+  197  Division <114>
+  198  Turno: <Mañana>
+  199  EOF
+  200  git add README.md datos_usuario.txt
+  201  git commit -m "ADD: Añadiendo Readme y datos de usuario"
+  202  git push
+  203  echo $HOME
+  204  pwd
+  205  mkdir -p ∼/materia{1,2}/uni{1,2,3}
+  206  tree ∼/materia*
+  207  nano script_dir.sh
+  208  chmod +x script_dir.sh
+  209  ./script_dir.sh
+  210  git add .
+  211  git commit -m "ADD: Añadiendo script"
+  212  history -a
+  213  cp ∼/.bash_history ./Historial_comandos_Menna.txt
+  214  history -a
+  215  cp ∼/.bash_history ./Historial_comandos_Menna.txt
+  216  touch ∼/.bash_history
+  217  ls-l
+  218  history -a
+  219  cp ∼/.bash_history ./Historial_comandos_Menna.txt
+  220  git add .
+  221  git commit -, "ADD: Historial de comandos de Menna"
+  222  git commit -m "ADD: Historial de comandos de Menna"
+  223  git push
+  224  maan
+  225  man
+  226  man man
+  227  ls -l
+  228  cd clase4
+  229  ls -l
+  230  cd practica2.txt
+  231  cat /practica2.txt
+  232  cat
+  233  ls -l
+  234  cat archivo.txt
+  235  cat archivo2.txt
+  236  cat archivo3.txt
+  237  cat practica2.txt
+  238  cd ..
+  239  pwd
+  240  cd clase 5
+  241  cd clase5
+  242  ls -l
+  243  tree
+  244  cd home
+  245  cd ..
+  246  cd repogit
+  247  pwd
+  248  cd ~
+  249  pwd
+  250  history
+  251  cd repogit
+  252  cd TP1_AySO_Menna_Eros/
+  253  tree
+  254  cd ~
+  255  tree
+  256  tree home
+  257  tree /home
+  258  ls -l
+  259  cd repogit
+  260  ls -l
+  261  tree
+  262  cd ~
+  263  tree
+  264  pwd
+  265  ls -l
+  266  cd repogit
+  267  cd TP1_AySO_Menna_Eros/
+  268  ls -l
+  269  cat datos_url.txt
+  270  cat script_dir.sh 
+  271  tree
+  272  cd ..
+  273  pwd
+  274  git innit
+  275  git init
+  276  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.git
+  277  git branch -M main
+  278  git push -u origin main
+  279  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.git
+  280  git commit -m "first commit"
+  281  git status
+  282  git add
+  283  git add .
+  284  git push
+  285  git push -u origin main
+  286  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.gi
+  287  git branch -M main
+  288  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.git
+  289  git push -u origin main
+  290  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.git
+  291  git push
+  292  git push -u origin main
+  293  git init
+  294  git commit -m "first commit"
+  295  git branch -M main
+  296  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.git
+  297  git push -u origin main
+  298  git status
+  299  sudo pvs > pvs.txt
+  300  history
+  301  sudo vgs > vgs.txt
+  302  sudo lvs > lvs.txt
+  303  history > historial_lvm.txt
