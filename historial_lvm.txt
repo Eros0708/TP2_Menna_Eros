@@ -301,3 +301,154 @@
   301  sudo vgs > vgs.txt
   302  sudo lvs > lvs.txt
   303  history > historial_lvm.txt
+  304  git status
+  305  git add.
+  306  git add .
+  307  git commit -m "comentario"
+  308  git push
+  309  git push -u origin main
+  310  git status
+  311  git branch -M main
+  312  git remote add origin https://github.com/Eros0708/TP2_Menna_Eros.git
+  313  git push -u origin main
+  314  pwd
+  315  whoami
+  316  fdisk -l
+  317  sudo fdisk -l
+  318  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+  319  # Add Docker's official GPG key:
+  320  sudo apt-get update
+  321  sudo apt-get install ca-certificates curl
+  322  sudo install -m 0755 -d /etc/apt/keyrings
+  323  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  324  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  325  # Add the repository to Apt sources:
+  326  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  327    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  328  sudo apt-get update
+  329  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  330  Y
+  331  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  332  ps aux | grep unattended-upgr
+  333  sudo kill -9 5300
+  334  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  335  sudo apt update
+  336  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  337  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  338  echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  339  sudo apt update
+  340  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  341  sudo docker run hello-world
+  342  sudo usermod -a -G docker $(whoami)
+  343  cat /etc/group
+  344  cat /etc/group | grep docker
+  345  id
+  346  exit
+  347  id
+  348  sudo fdisk /dev/sdb
+  349  sudo fdis -l
+  350  sudo fdisk -l
+  351  sudo mkfs.ext4 /dev/sdb1
+  352  sudo mkfs.ext4 /dev/sdb2
+  353  sudo mkfs.ext4 /dev/sdb5
+  354  sudo mkfs.ext4 /dev/sdb6
+  355  sudo mkdir -p /mnt/{sdb1,sdb2,sdb5,sdb6}
+  356  ls -l /mnt/
+  357  df -h
+  358  sudo mount /dev/sdb1 /mnt/sdb1
+  359  sudo mount /dev/sdb2 /mnt/sdb2
+  360  sudo mount /dev/sdb5 /mnt/sdb5
+  361  sudo mount /dev/sdb6 /mnt/sdb6
+  362  ds -h
+  363  df -h
+  364  sudo fdisk /dev/sdb
+  365  sudo mkswap /dev/sdb3
+  366  sudo swapon /dev/sdb3
+  367  free
+  368  lsblk
+  369  sudo fdisk /dev/sdd
+  370  sudo swapon /dev/sdd1 [cite: 174]
+  371  sudo swapon /dev/sdd1 [cite: 189]
+  372  free -h
+  373  free -h [cite 191]
+  374  sudo fdisk /dev/sdc [cite: 212]
+  375  sudo fdisk /dev/sdd
+  376  sudo mkswap /dev/sdd1
+  377  sudo swapon /dev/sdd1
+  378  free -h
+  379  sudo fdisk /dev/sdc
+  380  sudo wipefs -a /dev/sdc1
+  381  sudo wipefs -a /dev/sdc2
+  382  sudo wipefs -a /dev/sdd2
+  383  sudo wipefs -a /dev/sdd3
+  384  sudo wipefs -a /dev/sdd5
+  385  sudo wipefs -a /dev/sdd6
+  386  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+  387  sudo apt update
+  388  sudo apt install lvm2
+  389  sudo wipefs -a /dev/sdc1
+  390  sudo wipefs -a /dev/sdc2
+  391  sudo wipefs -a /dev/sdd2
+  392  sudo wipefs -a /dev/sdd3
+  393  sudo wipefs -a /dev/sdd5
+  394  sudo wipefs -a /dev/sdd6
+  395  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+  396  sudo pvs
+  397  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+  398  sudo vgcreate vg_wb /dev/sdc2 
+  399  sudo vgs
+  400  sudo lvcreate -L 1G vg_web -n lv_web1
+  401  sudo lvcreate -L 512M vg_web -n lv_web2
+  402  sudo vgs
+  403  sudo lvcreate -L 1G vg_web -n lv_web1
+  404  sudo pvs
+  405  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+  406  sudo vgs
+  407  sudo lvcreate -L 1G vg_web -n lv_web1
+  408  sudo lvcreate -L 512M vg_web -n lv_web2
+  409  sudo lvcreate -L 512M vg_web -n lv_web3
+  410  sudo pvscan
+  411  sudo vgscan
+  412  sudo vgchange -ay
+  413  sudo vgs
+  414  sudo lvcreate -L 1G vg_web -n lv_web1
+  415  sudo pvs
+  416  sudo vgremove vg_web
+  417  sudo vgcreate vg_web /dev/sdc2
+  418  sudo lvcreate -L 1G vg_web -n lv_web1
+  419  fdisk -l /dev/sdc
+  420  sudo fdisk -l /dev/sdc
+  421  sudo wipefs -a /dev/sdc2
+  422  sudo pvcreate /dev/sdc2
+  423  sudo vgcreate vg_web /dev/sdc2
+  424  sudo vgscan
+  425  sudo vgchange -ay
+  426  sudo vgs
+  427  sudo lvcreate -L 1G vg_web -n lv_web1
+  428  sudo lvcreate -L 512M vg_web -n lv_web2
+  429  sudo lvcreate -L 512M vg_web -n lv_web3
+  430  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+  431  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+  432  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+  433  sudo mkdir /mnt/web1 /mnt/web2 /mnt/web3
+  434  sudo mount /dev/mapper/vg_web-lv_web1 /mnt/web1
+  435  sudo mount /dev/mapper/vg_web-lv_web2 /mnt/web2
+  436  sudo mount /dev/mapper/vg_web-lv_web3 /mnt/web3
+  437  df -hT
+  438  sudo pvs > pvs.txt
+  439  sudo vgs > vgs.txt
+  440  sudo lvs > lvs.txt
+  441  history > historial_lvm.txt
+  442  git add.
+  443  git add .
+  444  cd TP2_AySO
+  445  ls -l
+  446  cd repogit
+  447  ls -l
+  448  cd ..
+  449  ls -l
+  450  cd TP2_AySO/
+  451  sudo pvs > pvs.txt
+  452  sudo vgs > vgs.txt
+  453  sudo lvs > lvs.txt
+  454  history > historial_lvm.txt
